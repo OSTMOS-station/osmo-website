@@ -3,83 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Александров Ілля</title>
+  <title>Александров Ілля — Обслуговування систем осмосу</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
-    body {
+      font-family: 'Arial', sans-serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: #000;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
     .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 100%;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
+      max-width: 900px;
+      margin: 0 auto;
     }
     h1 {
       font-size: 2.5em;
-      margin-bottom: 10px;
+      margin-bottom: 0.3em;
     }
-    p {
-      font-size: 1.3em;
-      max-width: 800px;
-      margin-bottom: 30px;
+    .reading-time {
+      color: #0078d7;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .content ul {
+      margin-top: 1em;
+      padding-left: 1.2em;
+    }
+    .content ul li {
+      margin-bottom: 0.5em;
+    }
+    .content a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+    .content a:hover {
+      text-decoration: underline;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 40px;
     }
     .button {
       display: inline-block;
-      padding: 14px 24px;
+      background-color: #0078d7;
+      color: #fff;
+      padding: 14px 28px;
       margin: 10px;
-      font-size: 18px;
-      background-color: #1e90ff;
-      color: white;
-      text-decoration: none;
+      border: none;
       border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
       transition: background 0.3s ease;
     }
     .button:hover {
-      background-color: #0f70d1;
-    }
-    /* Фіксовані кнопки */
-    .fixed-left, .fixed-right {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 12px 18px;
-      font-size: 16px;
-      background-color: #1e90ff;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      z-index: 1000;
-    }
-    .fixed-left {
-      left: 15px;
-    }
-    .fixed-right {
-      right: 15px;
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
-  <!-- Кнопки по краях -->
-  <a href="tel:+380999524449" class="fixed-left">📞 Дзвінок</a>
-  <a href="https://t.me/aleksandrov_illa" class="fixed-right" target="_blank">💬 Telegram</a>
+  <div class="overlay">
+    <div class="container">
+      <h1>Александров Ілля Олександрович</h1>
+      <div class="reading-time">Час читання: 3 хв.</div>
 
-  <div class="container">
-    <h1>Александров Ілля Олександрович</h1>
-    <p>Надаю професійні послуги з встановлення, налаштування та обслуговування станцій зворотного осмосу для дому, офісів і бізнесу. Забезпечую повний спектр рішень для очищення води: монтаж фільтрів, систем водоочистки, заміна картриджів, дезінфекція обладнання, а також роботи з водовідведенням. Працюю як з новими, так і з уже встановленими системами. Допоможу підібрати оптимальне рішення під ваші потреби та бюджет. Використовую тільки якісні матеріали та перевірене обладнання. Гарантую високу якість робіт, швидкий виїзд та індивідуальний підхід до кожного клієнта. Зі мною ваша вода буде чистою та безпечною!</p>
-    <a href="tel:+380999524449" class="button">Зателефонувати</a>
-    <a href="https://t.me/aleksandrov_illa" class="button" target="_blank">Написати в Telegram</a>
+      <div class="content">
+        <p><strong>Надаю послуги:</strong></p>
+        <ul>
+          <li>Монтаж та обслуговування систем зворотного осмосу</li>
+          <li>Заміна картриджів, дезінфекція, промивка</li>
+          <li>Консультації та підбір обладнання</li>
+        </ul>
+
+        <p>Працюю з обладнанням відомих брендів, гарантія якості, виїзд по Києву та області. Індивідуальний підхід до кожного клієнта.</p>
+      </div>
+
+      <div class="buttons">
+        <a href="tel:+380999524449" class="button">📞 Зателефонувати</a>
+        <a href="https://t.me/aleksandrov_illa" class="button" target="_blank">💬 Telegram</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
