@@ -1,98 +1,51 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Александров Ілля — Обслуговування систем осмосу</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #000;
-    }
-    .overlay {
-      background: rgba(255, 255, 255, 0.85);
-      min-height: 100vh;
-      padding: 40px 20px;
-      box-sizing: border-box;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.3em;
-    }
-    .reading-time {
-      color: #0078d7;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-    .content p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    .content ul {
-      margin-top: 1em;
-      padding-left: 1.2em;
-    }
-    .content ul li {
-      margin-bottom: 0.5em;
-    }
-    .content a {
-      color: #0078d7;
-      text-decoration: none;
-    }
-    .content a:hover {
-      text-decoration: underline;
-    }
-    .buttons {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .button {
-      display: inline-block;
-      background-color: #0078d7;
-      color: #fff;
-      padding: 14px 28px;
-      margin: 10px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .button:hover {
-      background-color: #005fa3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chysta Voda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay">
-    <div class="container">
-      <h1>Александров Ілля Олександрович</h1>
-      <div class="reading-time">Час читання: 3 хв.</div>
+    <div class="background"></div>
+    <header>
+        <h1>chysta voda</h1>
+        <nav>
+            <button onclick="scrollToSection('contacts')">Контакти</button>
+            <button onclick="scrollToSection('installation')">Монтаж</button>
+            <button onclick="scrollToSection('consulting')">Консультативні послуги</button>
+        </nav>
+    </header>
 
-      <div class="content">
-        <p><strong>Надаю послуги:</strong></p>
-        <ul>
-          <li>Монтаж та обслуговування систем зворотного осмосу</li>
-          <li>Заміна картриджів, дезінфекція, промивка</li>
-          <li>Консультації та підбір обладнання</li>
-        </ul>
+    <main>
+        <section id="contacts">
+            <h2>Контакти</h2>
+            <p>Александров Ілля Олександрович</p>
+            <p>Телефон: <a href="tel:+380999524449">099 952 4449</a></p>
+            <p>Telegram: <a href="https://t.me/aleksandrov_illa" target="_blank">@aleksandrov_illa</a></p>
+        </section>
 
-        <p>Працюю з обладнанням відомих брендів, гарантія якості, виїзд по Києву та області. Індивідуальний підхід до кожного клієнта.</p>
-      </div>
+        <section id="installation">
+            <h2>Монтаж</h2>
+            <img src="slide1.png" alt="Монтаж" width="100%">
+        </section>
 
-      <div class="buttons">
-        <a href="tel:+380999524449" class="button">📞 Зателефонувати</a>
-        <a href="https://t.me/aleksandrov_illa" class="button" target="_blank">💬 Telegram</a>
-      </div>
-    </div>
-  </div>
+        <section id="consulting">
+            <h2>Консультативні послуги</h2>
+            <p>Ми пропонуємо експертні консультації щодо обслуговування систем осмосу. Наші фахівці допоможуть підібрати, налаштувати та підтримувати обладнання для очищення води. Висока якість та доступність гарантовані.</p>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім’я" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
